@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      box-sizing: border-box;
+    }
+
+    html {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background-color: #1b1a1a;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #aaaaaa;
+    }
+
+    header {
+      display: flex;
+      padding: 0 4%;
+      height: 46px;
+      align-items: center;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+    }
+
+    header img {
+      height: 20px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5%;
+      width: 100%;
+      height: 72px;
+    }
+
+    footer > div {
+      display: flex;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: none;
+      border: none;
+      font-size: 12px;
+      color: #aaaaaa;
+    }
+
+    a.icon-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: none;
+      border: none;
+      font-size: 12px;
+      color: #aaaaaa;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus {
+      outline: 0;
+    }
+
+    .btn-round div {
+      color: white;
+      display: flex;
+      background-image: linear-gradient(137deg, #65c6e5, #3d78d2);
+      padding: 4px 20px;
+      border-radius: 16px;
+      font-size: 14px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      padding: 46px 0 0;
+      height: 100%;
+      align-items: center;
+    }
+
+    video {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    .icon-btn {
+      padding-right: 24px;
+    }
+
+    .filler {
+      flex-grow: 1;
+    }
+  </style>
+  <body>
+    <header><img src="https://trell.co/assets/images/branding/Logo-text-white.svg" alt="Trell Logo" /></header>
+    <div class="main-content">
+      <div class="filler"></div>
+      <video
+        src="https://s3.ap-south-1.amazonaws.com/videostorage.trell.co/480p/5bab959745880f71fc7d1b2c_1537971607936.mp4"
+        autoplay
+        controls
+      ></video>
+      <div class="filler"></div>
+    </div>
+    <footer>
+      <div>
+        <a
+          class="icon-btn"
+          href="https://s3.ap-south-1.amazonaws.com/videostorage.trell.co/480p/5bab959745880f71fc7d1b2c_1537971607936.mp4"
+          download=""
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 27 27">
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke="#FFF"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.333"
+            >
+              <path d="M10.545 1h5.569v12.624h5.14l-7.71 8.182-8.14-8.182h5.141zM.889 25.437h25.333" />
+            </g>
+          </svg>
+          <p>Download</p>
+        </a>
+        <button class="icon-btn" id="share-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="24" viewBox="0 0 48 27">
+            <defs>
+              <linearGradient id="a" x1="50%" x2="50%" y1="100%" y2="0%">
+                <stop offset="0%" stop-color="#20B038" />
+                <stop offset="100%" stop-color="#60D66A" />
+              </linearGradient>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(20.667 .556)">
+                <rect width="26.667" height="26.133" fill="#3D5A98" rx="13.067" />
+                <path
+                  fill="#FFF"
+                  d="M16.612 25.785a13.08 13.08 0 0 1-3.005.348h-.547c-.202 0-.403-.004-.602-.013v-8.272H8.984v-3.942h3.474v-2.908c0-3.374 2.103-5.211 5.174-5.211 1.471 0 2.736.107 3.104.155v3.526l-2.13.001c-1.67 0-1.994.778-1.994 1.92v2.517h3.984l-.519 3.942h-3.465v7.937z"
+                />
+              </g>
+              <g transform="translate(.222 .111)">
+                <rect width="26.667" height="26.667" fill="url(#a)" rx="13.333" />
+                <g fill="#FFF">
+                  <path
+                    d="M13.367 21.842zm0 0zm-5.904-4.524l-.17-.27a7.09 7.09 0 0 1-1.097-3.797c.001-3.934 3.218-7.134 7.174-7.134 1.915 0 3.716.743 5.07 2.092a7.074 7.074 0 0 1 2.098 5.048c-.001 3.934-3.218 7.135-7.17 7.135h-.004a7.189 7.189 0 0 1-3.65-.995l-.262-.155-2.714.709.725-2.633zM4.739 13.25c0 1.513.397 2.99 1.152 4.292L4.667 21.99l4.573-1.193a8.655 8.655 0 0 0 4.123 1.045h.004c4.755 0 8.626-3.852 8.628-8.585 0-2.294-.896-4.45-2.525-6.073a8.595 8.595 0 0 0-6.103-2.517c-4.756 0-8.626 3.85-8.628 8.583z"
+                  />
+                  <path
+                    d="M11.197 9.654c-.162-.358-.332-.365-.485-.371-.126-.005-.27-.005-.414-.005a.794.794 0 0 0-.574.268c-.198.215-.755.734-.755 1.79 0 1.055.773 2.075.88 2.219.108.143 1.492 2.378 3.683 3.238 1.821.715 2.192.573 2.587.537.395-.036 1.275-.519 1.455-1.02.18-.5.18-.93.126-1.02-.054-.09-.198-.143-.413-.25-.216-.108-1.276-.627-1.474-.698-.197-.072-.34-.107-.485.107-.143.215-.556.698-.682.841-.126.143-.252.161-.467.054-.216-.108-.91-.334-1.734-1.065-.64-.568-1.073-1.27-1.2-1.486-.125-.214-.013-.33.095-.437.097-.096.216-.25.324-.376.107-.125.143-.215.215-.358.072-.143.036-.268-.018-.376-.054-.107-.473-1.168-.664-1.592"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p>Share</p>
+        </button>
+      </div>
+      <div>
+        <button class="btn-round" id="download-trell-app">
+          <div>
+            <!-- <img src="mobile-type-image" /> -->
+            <p id="mobile-type"></p>
+          </div>
+          <p>Download Trell App</p>
+        </button>
+      </div>
+    </footer>
+    <script>
+      var button = document.getElementById("share-btn");
+      button.addEventListener("click", () => {
+        // button.innerHTML = "ggwp";
+        navigator
+          .share({
+            title: "Web Fundamentals",
+            text: "Check out Web Fundamentals — it rocks!",
+            url: "https://developers.google.com/web"
+          })
+          .then(() => console.log("Successful share"))
+          .catch(error => console.log("Error sharing", error));
+      });
+      var mobileType = document.getElementById("mobile-type");
+      var mobileTypeImage = document.getElementById("mobile-type-image");
+      console.log(mobileType, mobileTypeImage);
+      var isIphone = ["iPad", "iPhone", "iPod"].indexOf(navigator.platform) >= 0;
+      if (isIphone) mobileType = "iPhone";
+      else mobileType.innerText = "Android";
+      var downloadButton = document.getElementById("download-trell-app");
+      downloadButton.addEventListener("click", () => {
+        if (isIphone) {
+          window.open("https://itunes.apple.com/in/app/trell-best-wanderlust-app/id1241794239");
+        } else {
+          window.open("https://play.google.com/store/apps/details?id=app.trell&hl=en_IN", "_blank");
+        }
+      });
+    </script>
+  </body>
+</html>
