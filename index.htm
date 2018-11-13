@@ -48,7 +48,7 @@
     footer {
       display: flex;
       justify-content: space-between;
-      padding: 0 5%;
+      padding: 0 3%;
       width: 100%;
       height: 72px;
     }
@@ -64,7 +64,7 @@
       flex-direction: column;
       background: none;
       border: none;
-      font-size: 12px;
+      font-size: 10px;
       color: #aaaaaa;
     }
 
@@ -75,7 +75,7 @@
       flex-direction: column;
       background: none;
       border: none;
-      font-size: 12px;
+      font-size: 10px;
       color: #aaaaaa;
       text-decoration: none;
       -webkit-tap-highlight-color: transparent;
@@ -132,13 +132,12 @@
     }
 
     .views-container {
-      position: absolute;
-      top: 1em;
-      left: 1em;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
+      height: 30px;
+      font-size: 14px;
     }
 
     .views-container svg {
@@ -146,7 +145,17 @@
     }
 
     .icon-btn {
-      padding-right: 24px;
+      padding-right: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: none;
+      border: none;
+      font-size: 10px;
+      color: #aaaaaa;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .icon-btn > p {
@@ -588,51 +597,52 @@
     </header>
     <div class="main-content">
       <div class="filler"></div>
-      <div class="video-container">
-        <video
-          src="https://ok424027g8.execute-api.ap-south-1.amazonaws.com/production/480p/5bab959745880f71fc7d1b2c_1537971607936.mp4"
-          autoplay
-          controls
-        ></video>
-
-        <div class="views-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16">
-            <defs>
-              <filter id="a" width="145.3%" height="183.3%" x="-23.4%" y="-41.7%" filterUnits="objectBoundingBox">
-                <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5" />
-                <feColorMatrix
-                  in="shadowBlurOuter1"
-                  result="shadowMatrixOuter1"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.714588995 0"
-                />
-                <feMerge>
-                  <feMergeNode in="shadowMatrixOuter1" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
-            </defs>
-            <g fill="none" fill-rule="evenodd" filter="#fff" transform="translate(2.333 1.222)">
-              <path
-                fill="#FFF"
-                d="M12.62 2.325c-.86.048-1.543.722-1.543 1.546 0 .855.735 1.548 1.64 1.548.874 0 1.588-.643 1.64-1.456.263.496.412 1.057.412 1.65 0 2.03-1.745 3.677-3.897 3.677-2.153 0-3.898-1.646-3.898-3.677s1.745-3.678 3.898-3.678c.628 0 1.222.14 1.748.39z"
-              />
-              <path
-                stroke="#FFF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.153"
-                d="M0 5.857c7.96-7.81 15.063-7.81 21.308 0 .384 0-3.614 5.538-10.653 6.122C7.58 12.234 4.028 10.193 0 5.857z"
-              />
-            </g>
-          </svg>
-          views
-        </div>
-      </div>
+      <video
+        src="https://ok424027g8.execute-api.ap-south-1.amazonaws.com/production/480p/5bab959745880f71fc7d1b2c_1537971607936.mp4"
+        autoplay
+        controls
+        loop
+      ></video>
       <div class="filler"></div>
     </div>
     <footer>
       <div>
+        <div class="icon-btn">
+          <div class="views-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16">
+              <defs>
+                <filter id="a" width="145.3%" height="183.3%" x="-23.4%" y="-41.7%" filterUnits="objectBoundingBox">
+                  <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+                  <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5" />
+                  <feColorMatrix
+                    in="shadowBlurOuter1"
+                    result="shadowMatrixOuter1"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.714588995 0"
+                  />
+                  <feMerge>
+                    <feMergeNode in="shadowMatrixOuter1" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd" filter="#fff" transform="translate(2.333 1.222)">
+                <path
+                  fill="#FFF"
+                  d="M12.62 2.325c-.86.048-1.543.722-1.543 1.546 0 .855.735 1.548 1.64 1.548.874 0 1.588-.643 1.64-1.456.263.496.412 1.057.412 1.65 0 2.03-1.745 3.677-3.897 3.677-2.153 0-3.898-1.646-3.898-3.677s1.745-3.678 3.898-3.678c.628 0 1.222.14 1.748.39z"
+                />
+                <path
+                  stroke="#FFF"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.153"
+                  d="M0 5.857c7.96-7.81 15.063-7.81 21.308 0 .384 0-3.614 5.538-10.653 6.122C7.58 12.234 4.028 10.193 0 5.857z"
+                />
+              </g>
+            </svg>
+            views
+          </div>
+          <p>Views</p>
+        </div>
         <a
           class="icon-btn"
           href="https://ok424027g8.execute-api.ap-south-1.amazonaws.com/production/480p/5bab959745880f71fc7d1b2c_1537971607936.mp4"
@@ -859,21 +869,21 @@
       if (isIphone) {
         mobileType.innerText = "iPhone";
         mobileTypeImage.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 19 22">
-                                    <g fill="#FFF" fill-rule="evenodd">
-                                        <path d="M10.054 17.667H8.043v2.993a1.34 1.34 0 1 1-2.681 0v-2.993H4.357a.67.67 0 0 1-.67-.67v-9.33H14.41v9.33c0 .37-.3.67-.67.67h-1.005v2.993a1.34 1.34 0 1 1-2.681 0v-2.993zM6.75 1.84a5.313 5.313 0 0 1 2.27-.507h.057c.812 0 1.581.182 2.27.506L12.73.464a.47.47 0 0 1 .662 0l.046.045a.47.47 0 0 1 0 .665L12.236 2.37a5.326 5.326 0 0 1 2.174 4.298H3.686c0-1.763.856-3.327 2.174-4.298L4.66 1.174a.47.47 0 0 1 0-.665l.045-.045a.47.47 0 0 1 .662 0L6.75 1.839zM10.723 4v1h1.005V4h-1.005zM6.367 4v1h1.006V4H6.367z"/>
-                                        <rect width="2.681" height="9" y="7.667" rx="1.34"/>
-                                        <rect width="2.681" height="9" x="15.416" y="7.667" rx="1.34"/>
-                                    </g>
-                                </svg>`;
+                                                                        <g fill="#FFF" fill-rule="evenodd">
+                                                                            <path d="M10.054 17.667H8.043v2.993a1.34 1.34 0 1 1-2.681 0v-2.993H4.357a.67.67 0 0 1-.67-.67v-9.33H14.41v9.33c0 .37-.3.67-.67.67h-1.005v2.993a1.34 1.34 0 1 1-2.681 0v-2.993zM6.75 1.84a5.313 5.313 0 0 1 2.27-.507h.057c.812 0 1.581.182 2.27.506L12.73.464a.47.47 0 0 1 .662 0l.046.045a.47.47 0 0 1 0 .665L12.236 2.37a5.326 5.326 0 0 1 2.174 4.298H3.686c0-1.763.856-3.327 2.174-4.298L4.66 1.174a.47.47 0 0 1 0-.665l.045-.045a.47.47 0 0 1 .662 0L6.75 1.839zM10.723 4v1h1.005V4h-1.005zM6.367 4v1h1.006V4H6.367z"/>
+                                                                            <rect width="2.681" height="9" y="7.667" rx="1.34"/>
+                                                                            <rect width="2.681" height="9" x="15.416" y="7.667" rx="1.34"/>
+                                                                        </g>
+                                                                    </svg>`;
       } else {
         mobileType.innerText = "Android";
         mobileTypeImage.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 19 22">
-                                    <g fill="#FFF" fill-rule="evenodd">
-                                        <path d="M10.054 17.667H8.043v2.993a1.34 1.34 0 1 1-2.681 0v-2.993H4.357a.67.67 0 0 1-.67-.67v-9.33H14.41v9.33c0 .37-.3.67-.67.67h-1.005v2.993a1.34 1.34 0 1 1-2.681 0v-2.993zM6.75 1.84a5.313 5.313 0 0 1 2.27-.507h.057c.812 0 1.581.182 2.27.506L12.73.464a.47.47 0 0 1 .662 0l.046.045a.47.47 0 0 1 0 .665L12.236 2.37a5.326 5.326 0 0 1 2.174 4.298H3.686c0-1.763.856-3.327 2.174-4.298L4.66 1.174a.47.47 0 0 1 0-.665l.045-.045a.47.47 0 0 1 .662 0L6.75 1.839zM10.723 4v1h1.005V4h-1.005zM6.367 4v1h1.006V4H6.367z"/>
-                                        <rect width="2.681" height="9" y="7.667" rx="1.34"/>
-                                        <rect width="2.681" height="9" x="15.416" y="7.667" rx="1.34"/>
-                                    </g>
-                                </svg>`;
+                                                                        <g fill="#FFF" fill-rule="evenodd">
+                                                                            <path d="M10.054 17.667H8.043v2.993a1.34 1.34 0 1 1-2.681 0v-2.993H4.357a.67.67 0 0 1-.67-.67v-9.33H14.41v9.33c0 .37-.3.67-.67.67h-1.005v2.993a1.34 1.34 0 1 1-2.681 0v-2.993zM6.75 1.84a5.313 5.313 0 0 1 2.27-.507h.057c.812 0 1.581.182 2.27.506L12.73.464a.47.47 0 0 1 .662 0l.046.045a.47.47 0 0 1 0 .665L12.236 2.37a5.326 5.326 0 0 1 2.174 4.298H3.686c0-1.763.856-3.327 2.174-4.298L4.66 1.174a.47.47 0 0 1 0-.665l.045-.045a.47.47 0 0 1 .662 0L6.75 1.839zM10.723 4v1h1.005V4h-1.005zM6.367 4v1h1.006V4H6.367z"/>
+                                                                            <rect width="2.681" height="9" y="7.667" rx="1.34"/>
+                                                                            <rect width="2.681" height="9" x="15.416" y="7.667" rx="1.34"/>
+                                                                        </g>
+                                                                    </svg>`;
       }
       var downloadButton = document.getElementById("download-trell-app");
       downloadButton.addEventListener("click", () => {
