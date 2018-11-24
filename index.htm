@@ -31,158 +31,6 @@
       color: #aaaaaa;
     }
 
-    header {
-      display: flex;
-      padding: 0 4%;
-      height: 46px;
-      align-items: center;
-      position: fixed;
-      top: 0px;
-      width: 100%;
-    }
-
-    header svg {
-      height: 24px;
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 3%;
-      width: 100%;
-      height: 72px;
-    }
-
-    footer > div {
-      display: flex;
-    }
-
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: none;
-      border: none;
-      font-size: 10px;
-      color: #aaaaaa;
-    }
-
-    a.icon-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: none;
-      border: none;
-      font-size: 10px;
-      color: #aaaaaa;
-      text-decoration: none;
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    a {
-      cursor: pointer;
-    }
-
-    button {
-      cursor: pointer;
-    }
-
-    button:focus {
-      outline: 0;
-    }
-
-    .btn-round div {
-      color: white;
-      display: flex;
-      background-image: linear-gradient(137deg, #65c6e5, #3d78d2);
-      padding: 4px 20px;
-      border-radius: 16px;
-      font-size: 13px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .btn-round span {
-      margin: 0 4px;
-    }
-
-    .main-content {
-      display: flex;
-      flex-direction: column;
-      padding: 46px 0 0;
-      height: 100%;
-      align-items: center;
-    }
-
-    video {
-      max-height: 100%;
-      max-width: 100%;
-      width: 100%;
-    }
-
-    .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      width: 100%;
-      max-width: 480px;
-    }
-
-    .views-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      height: 30px;
-      font-size: 14px;
-    }
-
-    .views-container svg {
-      margin: 4px 4px 0 0;
-    }
-
-    .icon-btn {
-      padding-right: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: none;
-      border: none;
-      font-size: 10px;
-      color: #aaaaaa;
-      text-decoration: none;
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    .icon-btn > p {
-      padding-top: 4px;
-    }
-
-    #mobile-type {
-      padding: 0;
-    }
-
-    .icon-btn svg {
-      margin-top: 6px;
-    }
-
-    .btn-round p {
-      padding-top: 4px;
-    }
-
-    .filler {
-      flex-grow: 1;
-    }
-
-    .share-icon-btn {
-      height: 96px;
-      width: 96px;
-    }
-
     /* Modal Style Begin */
 
     .modal {
@@ -558,11 +406,200 @@
     }
 
     /* Share style end */
+
+    /* Page styles */
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      padding: 0 4%;
+      height: 46px;
+      align-items: center;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 11px;
+    }
+
+    header svg {
+      height: 24px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.25em 0.5em;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    footer > div {
+      display: flex;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: none;
+      font-size: 10px;
+      color: #aaaaaa;
+    }
+
+    a.icon-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: none;
+      color: #aaaaaa;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    button:focus {
+      outline: 0;
+    }
+
+    .btn-round div {
+      color: white;
+      display: flex;
+      background-image: linear-gradient(137deg, #65c6e5, #3d78d2);
+      padding: 4px 20px;
+      border-radius: 16px;
+      font-size: 13px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-round span {
+      margin: 0 4px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      padding: 46px 0 0;
+      height: 100%;
+      align-items: center;
+    }
+
+    video {
+      max-width: 100%;
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .views-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      height: 30px;
+      font-size: 14px;
+    }
+
+    .views-container svg {
+      margin: 4px 4px 0 0;
+    }
+
+    .icon-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: none;
+      font-size: 12px;
+      color: #aaaaaa;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .icon-btn > p {
+      margin-left: 4px;
+    }
+
+    #mobile-type {
+      padding: 0;
+    }
+
+    .btn-round p {
+      padding-top: 4px;
+    }
+
+    .filler {
+      flex-grow: 1;
+    }
+
+    .share-icon-btn {
+      height: 96px;
+      width: 96px;
+    }
+
+    .download-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .download-btn-container p {
+      margin-right: 6px;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 8px 0;
+    }
+
+    .user-profile-follow-btn {
+      font-size: 14px;
+      border: 1px solid white;
+      padding: 0.15em 1em;
+      border-radius: 1em;
+      color: white;
+    }
+
+    .user-profile-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-profile-container p {
+      margin: 0 4px;
+      color: white;
+    }
+
+    .user-profile-container img {
+      border-radius: 15px;
+    }
   </style>
   <body>
     <header>
       <a href="https://trell.co" target="_blank"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="73" height="32" viewBox="0 0 73 32">
+        ><svg xmlns="http://www.w3.org/2000/svg" width="64" height="32" viewBox="0 0 73 32">
           <defs>
             <linearGradient id="a" x1="50.018%" x2="50.018%" y1=".021%" y2="100.014%">
               <stop offset="0%" stop-color="#FFF" />
@@ -594,19 +631,28 @@
           </g>
         </svg>
       </a>
+      <div class="download-btn-container">
+        <p>Download Trell App</p>
+        <button class="btn-round" id="download-trell-app">
+          <div>
+            <span id="svg-mobile-image"></span>
+            <p id="mobile-type"></p>
+          </div>
+        </button>
+      </div>
     </header>
     <div class="main-content">
       <div class="filler"></div>
-      <video
-        src="https://ok424027g8.execute-api.ap-south-1.amazonaws.com/production/480p/5bab959745880f71fc7d1b2c_1537971607936.mp4"
-        autoplay
-        controls
-        loop
-      ></video>
+      <video src="{{video-url}}" autoplay controls loop></video>
       <div class="filler"></div>
     </div>
     <footer>
-      <div>
+      <div class="footer-row">
+        <a class="user-profile-container" href="{{author-link}}" target="_blank">
+          <div class="user-profile"><img src="{{author-img}}" alt="user profile image" height="30px" /></div>
+          <p>{{ author-name }}</p>
+          <button class="user-profile-follow-btn">Follow</button>
+        </a>
         <div class="icon-btn">
           <div class="views-container">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16">
@@ -639,16 +685,41 @@
                 />
               </g>
             </svg>
-            views
+            {{ trail-views }}
           </div>
-          <p>Views</p>
         </div>
+      </div>
+      <div class="footer-row">
+        <button class="icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 31 25">
+            <path
+              fill="none"
+              fill-rule="evenodd"
+              stroke="#FFF"
+              stroke-width="1.778"
+              d="M1.347 7.048c-.162.562-.173 1.646-.004 2.281.68 2.113 1.833 3.44 4.91 6.135a1651.076 1651.076 0 0 1 .712.627l1.098.973.121.107c3.361 2.976 4.9 4.357 6.746 6.086.745.696 1.015.695 1.777-.007 1.647-1.517 2.986-2.722 5.979-5.395l.03-.027a600.725 600.725 0 0 0 4.702-4.225c3.402-3.098 3.587-7.212.52-10.047-3.104-2.87-7.555-2.639-10.851.61a.764.764 0 0 0-.053.058c-.043.052-.303.407-.4.533l-.635.82-.714-.754C13.02 2.426 10.888 1.358 8.31 1.592c-3.811.346-5.868 2.01-6.962 5.456z"
+            />
+          </svg>
+          <p>{{ trail-loves }}</p>
+        </button>
+        <button class="icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29">
+            <path
+              fill="none"
+              fill-rule="evenodd"
+              stroke="#FFF"
+              stroke-width="1.778"
+              d="M11.312 23.474l-4.645 3.577s-.915.684-1.36.46c-.445-.225-.414-.78-.414-1.107 0-.257.7-3.69 1.001-5.152C2.904 19.232 1 16.189 1 12.784 1 6.706 7.069 1.778 14.556 1.778c7.486 0 13.555 4.928 13.555 11.006 0 6.08-6.069 11.007-13.555 11.007-1.118 0-2.205-.11-3.244-.317z"
+            />
+          </svg>
+          <p>{{ trail-comments }}</p>
+        </button>
         <a
           class="icon-btn"
-          href="https://ok424027g8.execute-api.ap-south-1.amazonaws.com/production/480p/5bab959745880f71fc7d1b2c_1537971607936.mp4"
+          href={{download-url}}
           download
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 28 26">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 26">
             <g
               fill="none"
               fill-rule="evenodd"
@@ -664,7 +735,7 @@
           <p>Download</p>
         </a>
         <button class="icon-btn" id="share-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="24" viewBox="0 0 48 27">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="20" viewBox="0 0 48 27">
             <defs>
               <linearGradient id="a" x1="50%" x2="50%" y1="100%" y2="0%">
                 <stop offset="0%" stop-color="#20B038" />
@@ -693,15 +764,6 @@
             </g>
           </svg>
           <p>Share</p>
-        </button>
-      </div>
-      <div>
-        <button class="btn-round" id="download-trell-app">
-          <div>
-            <span id="svg-mobile-image"></span>
-            <p id="mobile-type"></p>
-          </div>
-          <p>Download Trell App</p>
         </button>
       </div>
     </footer>
@@ -790,11 +852,29 @@
       </div>
     </div>
     <script>
+      // Set video height
+      var videoElement = document.getElementsByTagName("video")[0];
+      videoElement.style.height = `${1.25 * videoElement.offsetWidth}px`;
+
+      // Initialize modal
+      MicroModal.init({
+        onShow: modal => {},
+        onClose: modal => {},
+        openTrigger: "data-custom-open",
+        closeTrigger: "data-custom-close",
+        disableScroll: true,
+        disableFocus: false,
+        awaitCloseAnimation: false,
+        debugMode: false
+      });
+
+      // Share Handler
       var shareHandle = function(type) {
         var link, target;
+        console.log(type);
         switch (type) {
           case "facebook":
-            link = `https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+            link = `https://facebook.com/sharer/sharer.php?u=${encodeURIComponent("ddd")}`;
             target = "_blank";
             break;
           case "whatsapp":
@@ -829,6 +909,7 @@
         if (type !== "copy") {
           window.open(link, target);
         } else {
+          // Show toast message
           Toastify({
             text: "Copied to clipboard.",
             duration: 1500,
@@ -840,23 +921,15 @@
         }
         MicroModal.close();
       };
-      MicroModal.init({
-        onShow: modal => console.info(`${modal.id} is shown`), // [1]
-        onClose: modal => console.info(`${modal.id} is hidden`), // [2]
-        openTrigger: "data-custom-open", // [3]
-        closeTrigger: "data-custom-close", // [4]
-        disableScroll: true, // [5]
-        disableFocus: false, // [6]
-        awaitCloseAnimation: false, // [7]
-        debugMode: true // [8]
-      });
+
+      // Share button listener
       var shareButton = document.getElementById("share-btn");
       shareButton.addEventListener("click", () => {
         if (navigator.share) {
           navigator
             .share({
-              title: window.document.title,
-              url: window.location.href
+              title: "{{share-title}}",
+              url: "{{share-url}}"
             })
             .then(() => console.log("Successful share"))
             .catch(error => console.log("Error sharing", error));
@@ -864,34 +937,38 @@
           MicroModal.show("modal-1");
         }
       });
+
+      // Conditionally render iphone/android icon
       var mobileType = document.getElementById("mobile-type");
       var mobileTypeImage = document.getElementById("svg-mobile-image");
       var isIphone = ["iPad", "iPhone", "iPod"].indexOf(navigator.platform) >= 0;
       if (isIphone) {
         mobileType.innerText = "iPhone";
         mobileTypeImage.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 19 22">
-                                                                              <g fill="#FFF" fill-rule="evenodd">
-                                                                                  <path d="M10.054 17.667H8.043v2.993a1.34 1.34 0 1 1-2.681 0v-2.993H4.357a.67.67 0 0 1-.67-.67v-9.33H14.41v9.33c0 .37-.3.67-.67.67h-1.005v2.993a1.34 1.34 0 1 1-2.681 0v-2.993zM6.75 1.84a5.313 5.313 0 0 1 2.27-.507h.057c.812 0 1.581.182 2.27.506L12.73.464a.47.47 0 0 1 .662 0l.046.045a.47.47 0 0 1 0 .665L12.236 2.37a5.326 5.326 0 0 1 2.174 4.298H3.686c0-1.763.856-3.327 2.174-4.298L4.66 1.174a.47.47 0 0 1 0-.665l.045-.045a.47.47 0 0 1 .662 0L6.75 1.839zM10.723 4v1h1.005V4h-1.005zM6.367 4v1h1.006V4H6.367z"/>
-                                                                                  <rect width="2.681" height="9" y="7.667" rx="1.34"/>
-                                                                                  <rect width="2.681" height="9" x="15.416" y="7.667" rx="1.34"/>
-                                                                              </g>
-                                                                          </svg>`;
+                                          <g fill="#FFF" fill-rule="evenodd">
+                                              <path d="M10.054 17.667H8.043v2.993a1.34 1.34 0 1 1-2.681 0v-2.993H4.357a.67.67 0 0 1-.67-.67v-9.33H14.41v9.33c0 .37-.3.67-.67.67h-1.005v2.993a1.34 1.34 0 1 1-2.681 0v-2.993zM6.75 1.84a5.313 5.313 0 0 1 2.27-.507h.057c.812 0 1.581.182 2.27.506L12.73.464a.47.47 0 0 1 .662 0l.046.045a.47.47 0 0 1 0 .665L12.236 2.37a5.326 5.326 0 0 1 2.174 4.298H3.686c0-1.763.856-3.327 2.174-4.298L4.66 1.174a.47.47 0 0 1 0-.665l.045-.045a.47.47 0 0 1 .662 0L6.75 1.839zM10.723 4v1h1.005V4h-1.005zM6.367 4v1h1.006V4H6.367z"/>
+                                              <rect width="2.681" height="9" y="7.667" rx="1.34"/>
+                                              <rect width="2.681" height="9" x="15.416" y="7.667" rx="1.34"/>
+                                          </g>
+                                      </svg>`;
       } else {
         mobileType.innerText = "Android";
         mobileTypeImage.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 19 22">
-                                                                              <g fill="#FFF" fill-rule="evenodd">
-                                                                                  <path d="M10.054 17.667H8.043v2.993a1.34 1.34 0 1 1-2.681 0v-2.993H4.357a.67.67 0 0 1-.67-.67v-9.33H14.41v9.33c0 .37-.3.67-.67.67h-1.005v2.993a1.34 1.34 0 1 1-2.681 0v-2.993zM6.75 1.84a5.313 5.313 0 0 1 2.27-.507h.057c.812 0 1.581.182 2.27.506L12.73.464a.47.47 0 0 1 .662 0l.046.045a.47.47 0 0 1 0 .665L12.236 2.37a5.326 5.326 0 0 1 2.174 4.298H3.686c0-1.763.856-3.327 2.174-4.298L4.66 1.174a.47.47 0 0 1 0-.665l.045-.045a.47.47 0 0 1 .662 0L6.75 1.839zM10.723 4v1h1.005V4h-1.005zM6.367 4v1h1.006V4H6.367z"/>
-                                                                                  <rect width="2.681" height="9" y="7.667" rx="1.34"/>
-                                                                                  <rect width="2.681" height="9" x="15.416" y="7.667" rx="1.34"/>
-                                                                              </g>
-                                                                          </svg>`;
+                                        <g fill="#FFF" fill-rule="evenodd">
+                                              <path d="M10.054 17.667H8.043v2.993a1.34 1.34 0 1 1-2.681 0v-2.993H4.357a.67.67 0 0 1-.67-.67v-9.33H14.41v9.33c0 .37-.3.67-.67.67h-1.005v2.993a1.34 1.34 0 1 1-2.681 0v-2.993zM6.75 1.84a5.313 5.313 0 0 1 2.27-.507h.057c.812 0 1.581.182 2.27.506L12.73.464a.47.47 0 0 1 .662 0l.046.045a.47.47 0 0 1 0 .665L12.236 2.37a5.326 5.326 0 0 1 2.174 4.298H3.686c0-1.763.856-3.327 2.174-4.298L4.66 1.174a.47.47 0 0 1 0-.665l.045-.045a.47.47 0 0 1 .662 0L6.75 1.839zM10.723 4v1h1.005V4h-1.005zM6.367 4v1h1.006V4H6.367z"/>
+                                              <rect width="2.681" height="9" y="7.667" rx="1.34"/>
+                                              <rect width="2.681" height="9" x="15.416" y="7.667" rx="1.34"/>
+                                          </g>
+                                      </svg>`;
       }
+
+      // Handle click on android/iphone download button
       var downloadButton = document.getElementById("download-trell-app");
       downloadButton.addEventListener("click", () => {
         if (isIphone) {
-          window.open("https://itunes.apple.com/in/app/trell-best-wanderlust-app/id1241794239");
+          window.open("{{download-url-ios}}");
         } else {
-          window.open("https://play.google.com/store/apps/details?id=app.trell&hl=en_IN", "_blank");
+          window.open("{{download-url-android}}", "_blank");
         }
       });
     </script>
